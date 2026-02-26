@@ -1,0 +1,1 @@
+The Neuron in a Neural Networks takes inputs, multiplies them with weights and adds a bias. It then feeds it into an activation function. The Sigmoid activation function was used in this project. This process is known as feedforward.
