@@ -8,7 +8,7 @@
 - Calculating loss is the way of quantifying how good our data really is. This way we can decide how much better the network needs to perform
 - We used MSE: Mean Squared Error here. 
     - Main idea is to minimize the loss, meaning that we got better predictions. Total point of training neural networks is trying to minimize its loss
-    - The formula for MSE is: $${MSE = {1/n}\Sigma}$$
+    - The formula for MSE is: $${MSE = \frac{1/n}\Sigma}$$
 
 - After being able to calculate the MSE, we know if we need to change our weights and biases. But the way to do so so that the loss decreases is to use gradients. The way to do this is to evaluate the gradients in the Loss Function. The Loss function contains all the weights and biases and the gradients will allow us to find out how to reduce these values so that we can decrease the loss to its maximum.
 
