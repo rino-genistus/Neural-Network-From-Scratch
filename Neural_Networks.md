@@ -19,3 +19,6 @@
 
 - With this idea of backpropagation in mind, using Stochastic Gradient Descent(SGD), will tell us how to change the weights and biases to minimize the loss. This is basically just an update equation.
     - $${w_1 \leftarrow w_1 - \upeta \frac{\partial L}{\partial w_1}}$$
+    - Here $${\upeta}$$ is the learning rate, which controls how fast we are training.
+    - If $${\frac{\partial L}{\partial w_1}}$$ is positive, $${w_1}$$ will decrease, meaning that $${L}$$ will decrease
+    - If $${\frac{\partial L}{\partial w_1}}$$ is negative, $${w_1}$$ will increase, meaning that $${L}$$ will decrease
