@@ -22,3 +22,10 @@
     - Here $${\upeta}$$ is the learning rate, which controls how fast we are training.
     - If $${\frac{\partial L}{\partial w_1}}$$ is positive, $${w_1}$$ will decrease, meaning that $${L}$$ will decrease
     - If $${\frac{\partial L}{\partial w_1}}$$ is negative, $${w_1}$$ will increase, meaning that $${L}$$ will decrease
+- A very key part of SGD is that it works with one sample at a time. Meaning that for every sample inthe dataset, it would calculate all the partial derivatives and use the update equation to change the weights and biases accordingly to decrease the Loss function.
+
+**Training Loop Code**
+
+- From about lines 57 to 130, it is manually coding in the neurons, hidden layer neurons, output layer neuron and all the gradient code for every single neuron. With the epochs and learning rate manually set, we go through and apply the gradient formula for each weight and bias to then adjust each of them in the best way to decrease the loss. The training data for this was the height and weight of each person with the prediction value being their gender. The values used in the actual code are not the weights but rather arbitrarily chosen shift values. The values were shifted by 135 pounds for the weight and 66 inches for the height
+
+- Working on this project, I learned about how neural networks work in the background rather than just how to code it using pytorch. I learned the math behind the neural networks, especially the partial derivatives involved in calculating the changes in the weights and biases for the decrease in the loss value. Im interested in creating more indepth neural networks in the near future for some meaningful purpose. My next steps for learning are working with Convolutional Neural Networks and Recurrent Neural Networks. 
