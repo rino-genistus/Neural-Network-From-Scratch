@@ -18,4 +18,4 @@
 - This is backpropagation as we're working from the end of the Loss function. 
 
 - With this idea of backpropagation in mind, using Stochastic Gradient Descent(SGD), will tell us how to change the weights and biases to minimize the loss. This is basically just an update equation.
-    - $${w_1 \leftarrow w_1 - \upeta \frac{\partial L}{\partial w_1}}
+    - $${w_1 \leftarrow w_1 - \upeta \frac{\partial L}{\partial w_1}}$$
