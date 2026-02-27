@@ -14,4 +14,8 @@
 
 - The Gradient for example, weight 1 or $${w_1}$$, is the partial derivative of L with respect to $${y_{pred}}$$ multiplied by the partial derivative of $${y_{pred}}$$ with respect to $${h_1}$$, because thats the only hidden layer that $${w_1}$$ affects, which is then multiplied by the partial derivative of $${h_1}$$ with respect to $${w_1}$$. 
     - The formula for this would be: $${\frac{\partial L}{\partial w_1} = \frac{\partial L}{\partial y_{pred}} \frac{\partial y_{pred}}{\partial h_1} \frac{\partial h_1}{\partial w_1}}$$
-- This is backpropagation as we're working from the end of the Loss function. **FINISH LATER**
+- **Note:** For each of the partial derivates, the equation that we are getting the partial derivate from is the sigmoid function, whose inputs are those of h1 or w1 in this case.
+- This is backpropagation as we're working from the end of the Loss function. 
+
+- With this idea of backpropagation in mind, using Stochastic Gradient Descent(SGD), will tell us how to change the weights and biases to minimize the loss. This is basically just an update equation.
+    - $${w_1 \leftarrow w_1 - \upeta \frac{\partial L}{\partial w_1}}
